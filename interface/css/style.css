@@ -1,0 +1,95 @@
+main {
+  width: 75vw;
+  margin: 0px auto;
+}
+
+header, footer {
+  background-color: #57d3ea;
+  width: calc(100% - 10px);
+  height: 10vh;
+  color: white;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+footer {
+  background-color: #fea500;
+  margin-top: 10px;
+}
+
+aside {
+  min-height: 80px;
+  box-shadow: 3px 2px 25px -15px #0000005c;
+  border-radius: 3px;
+  border: 4px solid transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+span {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  text-transform: uppercase;
+  font-style: oblique;
+  font-size: 0.9rem;
+  display: block;
+  white-space: nowrap;
+  opacity: 0.7;
+}
+
+.left_side {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.right_side {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  height: 450px;
+}
+
+.row {
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.hero {
+  background-color: #d7c9e3;
+  height: 50%;
+}
+
+.sidebar {
+  background-color: #9fc363;
+  height: 50%;
+}
+
+.main_content {
+  background-color: #f5c632;
+  height: 75%;
+}
+
+.extra_content {
+  background-color: #898989;
+  height: 25%;
+}
+
+
+.images {
+  background-color: #2bb673;
+  flex-grow: 3;
+}
+
+.posts {
+  background-color: #f2cdde;
+  flex-grow: 1;
+}
+
