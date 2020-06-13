@@ -56,8 +56,11 @@ const bracketValidate = async() => {
     message: "Text to check :",
   }]
   await inquirer.prompt(prompts).then(res => {
-    console.log(res.text);
-    console.log(validate(res.text));
+    console.log(
+    validate(res.text) ? 
+      "Brackets closed correctly" : 
+      "Error: there are brackets that are not closed"
+    );
   });
 }
 
