@@ -108,11 +108,19 @@ const carrotCalculate = async() => {
     const newInputs = [...inputs, answers];
     return again ? carrotItems(newInputs) : newInputs;
   }
+
+  
   await inquirer.prompt(prompts).then(async res => {
+    console.log("You need to enter at least 2 items")
     let items = await carrotItems();
-    console.log('capacity: ', res.capacity);
-    console.log(items);
-    console.log(getMaxValue(items, res.capacity));
+
+
+    if(items.length > 1){
+      console.log(getMaxValue(items, res.capacity));
+    }else{
+      console.log("Error: Insufficient data entered")
+    }
+    
   });
 }
 
